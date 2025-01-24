@@ -42,6 +42,7 @@ int main(){
     stu2.course = "BCA";
 
     stu1.displayData();
+    stu2.displayData();
 
     return 0;
 }
