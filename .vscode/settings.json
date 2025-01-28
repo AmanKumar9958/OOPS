@@ -60,10 +60,12 @@
     "cgpa",
     "Creta",
     "Hurracane",
+    "Pawan",
     "Sumit"
   ],
   "files.associations": {
     "*.embeddedhtml": "html",
     "iostream": "cpp"
-  }
+  },
+  "C_Cpp.errorSquiggles": "disabled"
 }
