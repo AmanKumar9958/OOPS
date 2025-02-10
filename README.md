@@ -2,12 +2,14 @@
 <h4>OOPS: Object-Oriented Programming System</h4>
 <h5>We will discuss the following topics:</h5>
 <ul>
-  <li>Classes & Objects</li>
-  <li>Constructors & Destructors</li>
-  <li>Dynamic Memory Allocation</li>
+  <li>Classes & Objects</li> ✔
+  <li>This Keyword</li> ✔
+  <li>Constructors & Destructors</li> ✔
+  <li>Dynamic Memory Allocation</li> ✔
+  <li>Access Modifiers</li> ✔
+  <li>Inheritance</li> ✔
   <li>Encapsulation</li>
   <li>Abstraction</li>
-  <li>Inheritance</li>
   <li>Polymorphism</li>
   <li>Friend Keyword</li>
 </ul>
