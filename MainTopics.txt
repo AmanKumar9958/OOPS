@@ -1,0 +1,12 @@
+1. Encapsulation ✔
+2. Abstraction
+3. Inheritance ✔
+4. Polymorphism ✔
+    a. Function Overloading ✔
+    b. Function Overriding ✔
+5. Static
+    a. Data Member
+    b. Member Function
+6. Friend
+    a. Function
+    b. Class
