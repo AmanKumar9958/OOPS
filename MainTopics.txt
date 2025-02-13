@@ -1,5 +1,5 @@
 1. Encapsulation ✔
-2. Abstraction
+2. Abstraction ✔
 3. Inheritance ✔
 4. Polymorphism ✔
     a. Function Overloading ✔
