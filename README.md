@@ -1,21 +1,30 @@
-<h1 style="font-weight: bold">OOPS</h1>
-<h4>OOPS: Object-Oriented Programming System</h4>
-<h5>We will discuss the following topics:</h5>
-<ul>
-  <li>Classes & Objects</li> ✔
-  <li>This Keyword</li> ✔
-  <li>Constructors & Destructors</li> ✔
-  <li>Dynamic Memory Allocation</li> ✔
-  <li>Access Modifiers</li> ✔
-  <li>Inheritance</li> ✔
-  <li>Encapsulation</li>
-  <li>Abstraction</li>
-  <li>Polymorphism</li>
-  <li>Friend Keyword</li>
-</ul>
+# 🏆 Object-Oriented Programming System (OOPS)
 
-<h2><b>Class: </b>A class is a blueprint or template for creating objects.</h2>
-<p>Example:</p>
+## 📌 Overview  
+Object-Oriented Programming (OOP) is a paradigm that focuses on organizing code using objects and classes. It enhances modularity, reusability, and scalability of code.
+
+---
+
+## 📖 Topics Covered  
+✔ **Classes & Objects**  
+✔ **This Keyword**  
+✔ **Constructors & Destructors**  
+✔ **Dynamic Memory Allocation**  
+✔ **Access Modifiers**  
+✔ **Inheritance**  
+✔ **Encapsulation**  
+✔ **Abstraction**  
+✔ **Polymorphism**  
+✔ **Friend Keyword**  
+
+---
+
+## 📌 Class & Object  
+
+### 🟡 **Class**  
+A class is a blueprint or template for creating objects.  
+
+```cpp
 class Car {
 public:
     string brand;
@@ -25,26 +34,27 @@ public:
         cout << "Brand: " << brand << ", Speed: " << speed << " km/h" << endl;
     }
 };
+```
 
-<br>
+### 🔵 **Object**  
+An object is an instance of a class.  
 
-<h2><b>Objects: </b>An objects is an instance of a class</h2>
-<p>Example:</p>
+```cpp
 Car car1; // Object of class Car
 car1.brand = "Toyota";
 car1.speed = 120;
 car1.showDetails();
+```
 
-<br>
+---
 
-<h2><b>Encapsulation:</b></h2>
-<ul>
-  <li>Wrapping data and functions into single using called class.</li>
-  <li>Data is hidden is done by private keyword.</li>
-  <li>Access is provided using public keyword (getters and setters).</li>
-</ul>
+## 📌 Encapsulation  
+Encapsulation is the wrapping of data and methods into a single unit called a class.  
 
-<p>Example:</p>
+✅ Data is hidden using the `private` keyword.  
+✅ Access is provided using `public` methods (getters and setters).  
+
+```cpp
 class BankAccount {
 private:
     double balance;
@@ -53,11 +63,14 @@ public:
     void setBalance(double amount) { balance = amount; }
     double getBalance() { return balance; }
 };
+```
 
-<br>
+---
 
-<h2><b>Abstraction: </b>Hiding complex implementation details and showing only relevant information.</h2>
-<p>Example:</p>
+## 📌 Abstraction  
+Hiding complex implementation details and exposing only relevant functionality.  
+
+```cpp
 class Shape {
 public:
     virtual void draw() = 0; // Pure virtual function
@@ -67,11 +80,14 @@ class Circle : public Shape {
 public:
     void draw() { cout << "Drawing Circle" << endl; }
 };
+```
 
-<br>
+---
 
-<h2><b>Inheritance:</b> Acquiring properties and behaviors of one class in another.</h2>
-<p>Example:</p>
+## 📌 Inheritance  
+Inheritance allows a class to acquire properties and behaviors of another class.  
+
+```cpp
 class Animal {
 public:
     void sound() { cout << "Animals make sound" << endl; }
@@ -81,26 +97,23 @@ class Dog : public Animal {
 public:
     void bark() { cout << "Dog barks" << endl; }
 };
+```
 
-<br>
+---
 
-<h2><b>Polymorphism:</b></h2>
-<ul>
-  <li>Same function, different behavior.</li>
-  <li>Compile-time (Method Overloading & Operator Overloading)</li>
-  <li>Runtime (Method Overriding using Virtual Functions)</li>
-</ul>
+## 📌 Polymorphism  
 
-<p>Example:</p>
-<b>Method Overloading: </b>
+### 🔵 **Method Overloading (Compile-time Polymorphism)**  
+```cpp
 class Math {
 public:
     int add(int a, int b) { return a + b; }
     double add(double a, double b) { return a + b; }
 };
+```
 
-<br>
-<b>Method Overriding: </b>
+### 🟡 **Method Overriding (Runtime Polymorphism)**  
+```cpp
 class Base {
 public:
     virtual void show() { cout << "Base class" << endl; }
@@ -110,18 +123,19 @@ class Derived : public Base {
 public:
     void show() override { cout << "Derived class" << endl; }
 };
+```
 
-<br>
+---
 
-<h2><b>Constructor: </b>A special function that initializes an object automatically.</h2>
-<h3>Types of constructor: </h3>
-<ul>
-  <li>Default Constructor (No parameters)</li>
-  <li>Parameterized Constructor (Takes parameters)</li>
-  <li>Copy Constructor (Creates a copy of another object)</li>
-</ul>
+## 📌 Constructor  
+A special function that initializes an object automatically.  
 
-<p>Example: </p>
+### 🔹 **Types of Constructors**  
+✔ **Default Constructor** (No parameters)  
+✔ **Parameterized Constructor** (Takes parameters)  
+✔ **Copy Constructor** (Creates a copy of another object)  
+
+```cpp
 class Person {
 public:
     string name;
@@ -131,11 +145,14 @@ public:
 
     void show() { cout << "Name: " << name << endl; }
 };
+```
 
-<br>
+---
 
-<h2><b>This Pointer: </b>A special pointer that points to the current object.</h2>
-<p>Example: </p>
+## 📌 `this` Pointer  
+A special pointer that points to the current object.  
+
+```cpp
 class Student {
 private:
     string name;
@@ -143,16 +160,16 @@ private:
 public:
     void setName(string name) { this->name = name; } 
 };
+```
 
-<br>
+---
 
-<h2><b>Static Keyword: </b></h2>
-<ul>
-  <li>Used for class-level variables and functions.</li>
-  <li>Static variables are shared by all objects.</li>
-  <li>Static functions can be called without objects.</li>
-</ul>
-<p>Example: </p>
+## 📌 Static Keyword  
+✔ Used for **class-level** variables and functions.  
+✔ Static variables are **shared by all objects**.  
+✔ Static functions can be **called without objects**.  
+
+```cpp
 class Counter {
 public:
     static int count;
@@ -160,8 +177,25 @@ public:
 };
 
 int Counter::count = 0;
+```
 
+---
 
-<p>Started on: 8 Jan 2025</p>
-<p>Expected to end: 10 Jan 2025</p>
-<p>Ended on: 12 Feb 2025</p>
+## 📆 Project Timeline  
+
+- **Started on:** 🗓 8 Jan 2025  
+- **Expected to end on:** 🗓 10 Jan 2025  
+- **Ended on:** 🗓 12 Feb 2025  
+
+---
+
+## 📜 License  
+This project is **open-source** and available under the **MIT License**.  
+
+---
+
+## 📩 Contact  
+📌 **GitHub**: [AmanKumar9958](https://github.com/AmanKumar9958)  
+📌 **Portfolio**: [My Portfolio](https://aman-dev-portfolio.netlify.app)  
+
+If you find this useful, don't forget to ⭐ the repository! 🚀
